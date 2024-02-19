@@ -7,7 +7,7 @@ const FAQ = () => {
   useEffect(() => {
     document.title = "Frequently Asked Questions";
     const favicon = document.getElementById("favicon");
-    favicon.href = "https://drive.google.com/file/d/1yD5ha7Dvg4vc3ajU6JSpTERf8mOLM0Oz/view?usp=sharing" || "src\\images\favIcon_Black.svg";
+    favicon.href = "https://www.getonecard.app/images/One_logo_16by16.svg";
   }, []);
 
   const AllFaq = FaqData.map((item, index) => (

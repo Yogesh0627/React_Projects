@@ -39,34 +39,34 @@ const Footer = () => {
                 <a href="https://www.facebook.com/GetOneCardIN/" rel="noreferrer" target="_blank">
                 <img
                   className="w-9 h-9"
-                  src="src\images\Facebook_Logo.png"
+                  src="https://www.getonecard.app/images/icons/footer-social-facebook.svg"
                   alt="One-Card Facebook"
                 /></a>
                 <a href="https://twitter.com/GetOneCardIN" rel="noreferrer" target="_blank">
                 <img
                   className="w-9 h-9"
-                  src="src\images\Twiiter_Logo.png"
+                  src="https://www.getonecard.app/images/icons/footer-social-twitter.svg"
                   alt="One-Card Twitter"
                 /></a>
 
                 <a href="https://www.instagram.com/getonecardIN/" rel="noreferrer" target="_blank">
                 <img
                   className="w-9 h-9"
-                  src="src\images\Instagram_logo.png"
+                  src="https://www.getonecard.app/images/icons/footer-social-instagram.svg"
                   alt="One-Card InstaGram"
                 /></a>
 
                 <a href="https://www.linkedin.com/showcase/onecard-app/" rel="noreferrer" target="_blank">
                 <img
                   className="w-9 h-9"
-                  src="src\images\LinkedIn_Logo.png"
+                  src="https://www.getonecard.app/images/icons/footer-social-linkedin.svg"
                   alt="One-Card LinkedIN"
                 /></a>
                 <a href="https://www.youtube.com/channel/UC3fK4HJd0FAL3y_ZgvQDGPg" rel="noreferrer" target="_blank">
                 <img
                   className="w-12
                             a h-9"
-                  src="src\images\youtube.png"
+                  src="https://www.getonecard.app/images/icons/footer-social-youtube.svg"
                   alt="One-Card Youtube"
                 />
                 </a>
