@@ -1,8 +1,9 @@
-# React + Vite
+# OneCard Clone
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# This is a UI Clone of OneCard made with the help of React and tailwind 
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. React router is used for routing
+2. React is used for making components and UI
+3. styling is done with the help of tailwind
+4. All the pictures and refrence taken from the official OneCard website
+5. Completed 
