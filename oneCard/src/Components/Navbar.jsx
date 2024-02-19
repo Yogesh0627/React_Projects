@@ -45,7 +45,7 @@ const Navbar = () => {
           <img
             src="https://www.getonecard.app/images/One_logo_69by24.svg"
             alt="OneCard Logo"
-            className="h-10 w-16"
+            className="h-10 w-16 hover:cursor-pointer"
             onClick={() => handleApply(navigate, "/")}
           />
         </div>
