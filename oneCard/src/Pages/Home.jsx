@@ -283,7 +283,7 @@ const Home = () => {
                   </div>
                   <br />
                   <div className="flex flex-row-reverse">
-                    <h3 className="text-6xl font-extrabold font-serif w-full border-2 lg:w-4/5">
+                    <h3 className="text-6xl font-extrabold font-serif w-full lg:w-4/5">
                       One Credit Card EMI
                     </h3>
                   </div>
