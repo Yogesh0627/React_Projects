@@ -6,7 +6,7 @@ const Careers = () => {
   useEffect(() => {
     document.title = "Careers at FPL";
     const favicon = document.getElementById("favicon");
-    favicon.href = "src/images/favIcon_Black.svg";
+    favicon.href ="https://drive.google.com/file/d/1yD5ha7Dvg4vc3ajU6JSpTERf8mOLM0Oz/view?usp=sharing" || "src\\images\favIcon_Black.svg"
   }, []);
 
   const allJobs = Career.map((item, index) => (

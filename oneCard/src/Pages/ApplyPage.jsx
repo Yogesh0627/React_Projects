@@ -10,7 +10,7 @@ const ApplyPage = () => {
     document.title = "OneCard";
     const favicon = document.getElementById("favicon");
     // console.log(favicon);
-    favicon.href = "/src/images/faviconForApply.ico";
+    favicon.href = "https://drive.google.com/file/d/1AZovquCDcgygNzGok5ggkA1flhbH1bSe/view?usp=sharing" || "src\\images\faviconForApply.ico";
   }, []);
   return (
     <div className="">

@@ -12,12 +12,12 @@ const Footer = () => {
             <div className="w-fit">
               <img
                 className="w-16 h-10"
-                src="src\images\logo_white.svg"
-                alt=""
+                src="https://www.getonecard.app/images/One_logo_white_59by336.svg"
+                alt="onecard logo"
               />
             </div>
             <div className="my-8">
-              <img src="src\images\asset 17.svg" alt="" />
+              <img src="https://www.getonecard.app/images/icons/crafted_with_love.svg" alt="" />
             </div>
             <div>
               <h2 className="text-[#0093f7] text-4xl font-extrabold font-serif">
