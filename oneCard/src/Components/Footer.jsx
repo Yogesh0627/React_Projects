@@ -286,7 +286,7 @@ const Footer = () => {
             <div className="flex m-8 gap-1 items-center justify-center flex-wrap">
               <img
                 className="w-14 h-12"
-                src="src\images\IMG-20231109-WA0002.jpg"
+                src="https://www.getonecard.app/images/about/das-iso27001.jpg"
                 alt=""
               />
               <img
@@ -296,7 +296,7 @@ const Footer = () => {
               />
               <img
                 className="w-14 h-6"
-                src="src\images\IMG-20231109-WA0003.jpg"
+                src="https://www.getonecard.app/images/about/pci_dss.jpg"
                 alt=""
               />
             </div>
