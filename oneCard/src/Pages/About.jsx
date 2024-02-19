@@ -1,4 +1,4 @@
-import  { useEffect } from "react";
+import { useEffect } from "react";
 import Footer from "../Components/Footer";
 
 const About = () => {
@@ -9,15 +9,15 @@ const About = () => {
   }, []);
   return (
     <div>
-      <section className="mt-16">
+      <section className="mt-20">
         <div>
-          <div className="flex flex-col md:flex-row  justify-center items-center ">
-            <div className="w-2/5 m-auto">
+          <div className="flex flex-col md:flex-row w-11/12  m-auto  justify-center items-center ">
+            <div className="w-full md:w-1/2 m-auto">
               <div className="p-3">
-                <h1 className="text-6xl font-serif font-extrabold ">
+                <h1 className="text-6xl font-serif font-extrabold w-full ">
                   About <br />{" "}
                   <span className="text-[#0093f7]  ">
-                    <p className="mt-2">OneCard</p>
+                    <p className="mt-2 border-2 w-full">One Credit Card</p>
                   </span>
                 </h1>
               </div>
@@ -36,9 +36,9 @@ const About = () => {
                 </p>
               </div>
             </div>
-            <div className="w-2/5 m-auto">
+            <div className=" w-full md:w-2/5 m-auto ">
               <img
-                className="w-11/12"
+                className="w-full"
                 src="https://www.getonecard.app/images/AboutUs_Banner_2.png"
                 alt="AboutImage"
               />
@@ -60,36 +60,36 @@ const About = () => {
 
             {/* featured IN */}
             <div>
-              <div className="flex w-4/5 m-auto gap-10 items-center justify-center">
-                <div className="w-1/5 p-5">
+              <div className="flex flex-col gap-10 md:flex md:flex-row w-4/5 m-auto  items-center justify-center">
+                <div className="w-3/5 m-auto md:w-1/5 ">
                   <img
                     className="w-full"
                     src="https://www.getonecard.app/images/clients/inc42.png"
                     alt=""
                   />
                 </div>
-                <div className="w-1/5">
+                <div className="w-3/5 m-auto md:w-1/5">
                   <img
                     className="w-full "
                     src="https://www.getonecard.app/images/clients/logo_yourstory.png"
                     alt=""
                   />
                 </div>
-                <div className="w-1/5">
+                <div className="w-3/5 m-auto md:w-1/5">
                   <img
                     className="w-full "
                     src="https://www.getonecard.app/images/clients/businessline.png"
                     alt=""
                   />
                 </div>
-                <div className="w-1/5">
+                <div className="w-3/5 m-auto md:w-1/5 border-2 border-blue 600">
                   <img
                     className="w-full "
                     src="https://www.getonecard.app/images/clients/cio_elets.png"
                     alt=""
                   />
                 </div>
-                <div className="w-1/5">
+                <div className="w-3/5 m-auto md:w-1/5">
                   <img
                     className="w-full "
                     src="https://www.getonecard.app/images/clients/businessstandard.png"
@@ -104,7 +104,7 @@ const About = () => {
 
           <div className=" ">
             <div className="flex flex-col justify-center items-center p-7 md:flex-row">
-              <div className="w-2/5  p-1">
+              <div className="w-full md:w-2/5  p-1">
                 <div>
                   <img
                     className="m-auto"
@@ -113,14 +113,14 @@ const About = () => {
                   />
                 </div>
                 <div className="text-center ">
-                  <h2 className="text-[#0093f7] m-auto w-10/12 p-1  text-5xl  ">
+                  <h2 className="text-[#0093f7] m-auto w-full md:w-10/12 p-1  text-5xl  ">
                     We're committed to Data Security
                   </h2>
                 </div>
               </div>
 
-              <div className="w-2/5  p-2 ">
-                <p className="w-10/12  text-xl text-[#696969] font-serif font-medium">
+              <div className="w-full md:w-2/5  p-2 ">
+                <p className="w-full md:w-10/12  text-xl text-[#696969] font-serif font-medium">
                   We are committed to protect users' data and their financial
                   information. We are IS0/IEC 27001:2013 and PCI-DSS V 3.2.1
                   certified and work on the principle of opt-in consent and full
@@ -145,17 +145,17 @@ const About = () => {
               </h2>
             </div>
             <div className="m-auto text-center p-2">
-              <p className=" w-2/5 m-auto text-xl text-[#696969] font-serif font-medium">
+              <p className="w-full md:w-2/5 m-auto text-xl text-[#696969] font-serif font-medium">
                 We are experienced professionals from the financial services
                 industry. We have lived it. Now, we are re-imagining it.
               </p>
-              <p className=" w-3/5 m-auto text-xl text-[#696969] font-serif font-medium">
+              <p className="w-full md:w-3/5 m-auto text-xl text-[#696969] font-serif font-medium">
                 A fun-loving bunch of folks who have come together to re-imagine
                 your experience of credit products in India. Team photos are
                 struggling to keep pace with our team size :)
               </p>
             </div>
-            <div className="w-9/12 rounded-xl m-auto">
+            <div className="w-full md:w-9/12 rounded-xl m-auto">
               <img
                 className="w-full rounded-xl"
                 src="https://www.getonecard.app/images/team/team-one2.jpg"

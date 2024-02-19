@@ -1,9 +1,9 @@
-import React, { useEffect } from "react";
+
+import { handleApply } from "./Navigation ";
+import { useNavigate } from "react-router";
 
 const Footer = () => {
-  useEffect(() => {
-    document.title = "About Us - OneCard";
-  }, []);
+  const navigate = useNavigate();
   return (
     <footer>
       <div className="footer">
@@ -28,39 +28,48 @@ const Footer = () => {
               <p> We are a new kid on the block, eager to learn.</p>
               <p> All ideas and suggestions are welcome.</p>
               <br />
-              <button className="bg-[#1893f7] w-44 h-12 text-lg text-white p-1 rounded-md font-bold font-serif">
+              <button onClick={() => handleApply(navigate, "/apply")}
+               className="bg-[#1893f7] w-44 h-12 text-lg text-white p-1 rounded-md font-bold font-serif">
                 Apply Now
               </button>
             </div>
             <div className="text-white  text-center ">
               <h5 className="text-xl font-bold">FollowUs On</h5>
               <div className="flex gap-4 my-7">
+                <a href="https://www.facebook.com/GetOneCardIN/" rel="noreferrer" target="_blank">
                 <img
                   className="w-9 h-9"
                   src="src\images\Facebook_Logo.png"
                   alt="One-Card Facebook"
-                />
+                /></a>
+                <a href="https://twitter.com/GetOneCardIN" rel="noreferrer" target="_blank">
                 <img
                   className="w-9 h-9"
                   src="src\images\Twiiter_Logo.png"
                   alt="One-Card Twitter"
-                />
+                /></a>
+
+                <a href="https://www.instagram.com/getonecardIN/" rel="noreferrer" target="_blank">
                 <img
                   className="w-9 h-9"
                   src="src\images\Instagram_logo.png"
                   alt="One-Card InstaGram"
-                />
+                /></a>
+
+                <a href="https://www.linkedin.com/showcase/onecard-app/" rel="noreferrer" target="_blank">
                 <img
                   className="w-9 h-9"
                   src="src\images\LinkedIn_Logo.png"
                   alt="One-Card LinkedIN"
-                />
+                /></a>
+                <a href="https://www.youtube.com/channel/UC3fK4HJd0FAL3y_ZgvQDGPg" rel="noreferrer" target="_blank">
                 <img
                   className="w-12
                             a h-9"
                   src="src\images\youtube.png"
                   alt="One-Card Youtube"
                 />
+                </a>
               </div>
             </div>
           </div>

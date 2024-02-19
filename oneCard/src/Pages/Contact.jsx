@@ -1,4 +1,4 @@
-import  { useEffect } from "react";
+import { useEffect } from "react";
 import Footer from "../Components/Footer";
 
 const Contact = () => {
@@ -9,7 +9,7 @@ const Contact = () => {
   }, []);
   return (
     <>
-      <section className="p-4 mt-32">
+      <section className="p-4 mt-20">
         <div>
           <div className="text-7xl text-center font-semibold">
             <h1>
