@@ -261,7 +261,7 @@ const Home = () => {
 
         {/* section seven starts here */}
 
-        <section className=" bg-[#ffffff] p-6">
+        <section className=" bg-[#ffffff]">
           <div className=" w-full">
             <div className="flex flex-col w-11/12 m-auto md:flex-row justify-center items-center ">
               <div className="h-[500px] w-full md:w-2/5 ">
@@ -283,7 +283,7 @@ const Home = () => {
                   </div>
                   <br />
                   <div className="flex flex-row-reverse">
-                    <h3 className="text-6xl font-extrabold font-serif w-full lg:w-4/5">
+                    <h3 className="text-6xl font-extrabold font-serif w-full border-2 lg:w-4/5">
                       One Credit Card EMI
                     </h3>
                   </div>
@@ -310,15 +310,15 @@ const Home = () => {
 
         <section className="bg-[#f2f2f2] ">
           <div>
-            <div className=" flex flex-col w-5/6 m-auto md:flex-row  justify-evenly items-center p-10">
-              <div className="w-full p-5 md:w-2/5">
+            <div className=" flex flex-col w-5/6 m-auto md:flex-row  justify-evenly items-center py-20">
+              <div className="w-full md:w-2/5 ">
                 <img
                   className="w-20 h-14"
                   src="https://www.getonecard.app/images/feature/Family_icon_for_web.png"
                   alt="metal"
                 />
                 <br />
-                <div className=" w-fit">
+                <div className=" w-full">
                   <h2 className="text-6xl font-extrabold font-serif ">
                     MyFamily
                   </h2>
@@ -345,7 +345,7 @@ const Home = () => {
         {/* section eight ends here */}
 
         {/* section Blog Starts here */}
-        <section className="p-10">
+        <section className="">
           <div>
             <div className="text-center my-10">
               <h2 className="text-6xl font-extrabold font-serif">
@@ -354,13 +354,13 @@ const Home = () => {
             </div>
 
             <div>
-              <div className="my-5 p-10">
-                <div className="ml-36 mb-2">
-                  <h2 className="text-xl font-serif font-extrabold">
+              <div className="my-5 p-10 ">
+                <div className="text-left w-4/5 m-auto  mb-2">
+                  <h2 className="text-xl text-left font-serif font-extrabold">
                     Explore Latest
                   </h2>
                 </div>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-between items-center w-4/5 m-auto gap-7">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-between items-center w-full md:w-4/5 m-auto gap-7">
                   <Blog_Component
                     date="Dec 18, 2023"
                     query="How to Block and Unblock Your Credit Card"
@@ -404,12 +404,8 @@ const Home = () => {
               <div>
                 <p className="text-2xl font-medium p-2 text-[#696969]">
                   OneCard is a co-branded credit card issued by Scheduled
-                  commercial Banks and
-                  <br />
-                  Financial Institutions in partnership with OneCard. The
-                  issuing Banks/Financial
-                  <br />
-                  Institutions are :
+                  commercial Banks and Financial Institutions in partnership
+                  with OneCard. The issuing Banks/Financial Institutions are :
                 </p>
               </div>
               <div className="w-full md:w-1/3 flex justify-center items-center p-2">

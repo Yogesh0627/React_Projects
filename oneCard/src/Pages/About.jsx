@@ -17,7 +17,7 @@ const About = () => {
                 <h1 className="text-6xl font-serif font-extrabold w-full ">
                   About <br />{" "}
                   <span className="text-[#0093f7]  ">
-                    <p className="mt-2 border-2 w-full">One Credit Card</p>
+                    <p className="mt-2  w-full">One Credit Card</p>
                   </span>
                 </h1>
               </div>
@@ -82,7 +82,7 @@ const About = () => {
                     alt=""
                   />
                 </div>
-                <div className="w-3/5 m-auto md:w-1/5 border-2 border-blue 600">
+                <div className="w-3/5 m-auto md:w-1/5 ">
                   <img
                     className="w-full "
                     src="https://www.getonecard.app/images/clients/cio_elets.png"

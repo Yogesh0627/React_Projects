@@ -1,10 +1,9 @@
-import  { useEffect } from "react";
+import { useEffect } from "react";
 import Blog_Componentes_Two from "../Components/Blog_Componentes_Two";
 import Footer from "../Components/Footer";
 import Blog_Search from "../Components/Blog_Search";
 
 const Blog = () => {
-
   useEffect(() => {
     document.title = "OneCard Blog: Tips, Guides & Insights on Credit Cards";
     const favicon = document.getElementById("favicon");
@@ -14,9 +13,9 @@ const Blog = () => {
     <div>
       <div className=" mt-20 pt-8 ">
         <div>
-          <div className="w-4/5 m-auto flex flex-col md:flex-row justify-evenly items-center mb-16 py-4 shadow-lg rounded-2xl">
-            <div className="w-2/5">
-              <div className=" flex flex-col gap-3 w-4/5 m-auto">
+          <div className="w-4/5 m-auto flex flex-col md:flex-row justify-evenly gap-5 items-center mb-16 py-4 shadow-lg rounded-2xl">
+            <div className="w-full md:w-2/5">
+              <div className=" flex flex-col gap-3 w-full md:w-4/5 m-auto">
                 <p className="text-sm text-[#696969] font-normal">
                   <span className="text-[#0090FA] font-bold text-sm">
                     OneCard
@@ -31,7 +30,7 @@ const Blog = () => {
                 <p>By OneCard</p>
               </div>
             </div>
-            <div className="w-3/6 border-2 shadow-md rounded-2xl">
+            <div className="w-full md:w-3/6 border-2 shadow-md rounded-2xl ">
               <img
                 className="w-full rounded-2xl"
                 src="https://www.getonecard.app/images/blog/Should_you_pay_just_the_minimum_amount_due.png"
