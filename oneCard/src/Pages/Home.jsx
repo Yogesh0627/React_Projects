@@ -1,11 +1,19 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import Blog_Component from "../Components/Blog_Component";
 import Footer from "../Components/Footer";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { handleApply } from "../Components/Navigation ";
+
 const Home = () => {
   useEffect(() => {
     document.title = "OneCard - India's best metal credit card";
+    const favicon = document.getElementById("favicon");
+    // console.log(favicon);
+    favicon.href = "src/images/favIcon_Black.svg";
   }, []);
+
+  const navigate = useNavigate();
+
   return (
     <>
       <div>
@@ -38,7 +46,10 @@ const Home = () => {
                   giving back control to the user.
                 </p>
               </div>
-              <button className="bg-[#1893f7] text-white p-1 h-10 w-40 rounded-md text-base font-extrabold font-serif">
+              <button
+                onClick={() => handleApply(navigate, "/apply")}
+                className="bg-[#1893f7] text-white p-1 h-10 w-40 rounded-md text-base font-extrabold font-serif"
+              >
                 Apply Now
               </button>
             </div>

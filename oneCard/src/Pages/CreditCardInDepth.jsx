@@ -1,8 +1,8 @@
-import React, { useEffect } from "react";
+import  { useEffect } from "react";
 import Blog_Component from "../Components/Blog_Component";
 import { creditCardInDepth } from "../AllData/BlogMenuData";
 import Blog_Search from "../Components/Blog_Search";
-import Blog_Componentes_Two from "../Components/Blog_Componentes_Two";
+
 import Footer from "../Components/Footer";
 
 const CreditCardInDepth = () => {
@@ -17,6 +17,8 @@ const CreditCardInDepth = () => {
 
   useEffect(() => {
     document.title = "Credit Card In-Depth";
+    const favicon = document.getElementById("favicon");
+    favicon.href = "src/images/favIcon_Black.svg";
   }, []);
   return (
     <div className="mt-24 pt-2 ">

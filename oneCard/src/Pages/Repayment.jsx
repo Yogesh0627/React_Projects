@@ -2,7 +2,6 @@ import React from "react";
 import Blog_Component from "../Components/Blog_Component";
 import { RepaymentsAndEmi } from "../AllData/BlogMenuData";
 import Blog_Search from "../Components/Blog_Search";
-import Blog_Componentes_Two from "../Components/Blog_Componentes_Two";
 import Footer from "../Components/Footer";
 
 const RepaymentAndEmi = () => {
@@ -17,6 +16,8 @@ const RepaymentAndEmi = () => {
 
   React.useEffect(() => {
     document.title = "Repayments and Emi";
+    const favicon = document.getElementById("favicon");
+    favicon.href = "src/images/favIcon_Black.svg";
   }, []);
   return (
     <div className="mt-24 pt-2 ">

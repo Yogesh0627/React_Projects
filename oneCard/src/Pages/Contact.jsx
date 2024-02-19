@@ -1,9 +1,11 @@
-import React, { useEffect } from "react";
+import  { useEffect } from "react";
 import Footer from "../Components/Footer";
 
 const Contact = () => {
   useEffect(() => {
     document.title = "Contact Us";
+    const favicon = document.getElementById("favicon");
+    favicon.href = "src/images/favIcon_Black.svg";
   }, []);
   return (
     <>
@@ -61,6 +63,7 @@ const Contact = () => {
               <a
                 href="https://www.google.com/maps/place/FPL+Technologies/@18.5526245,73.7300612,12z/data=!4m6!3m5!1s0x3bc2bfb0efff62bb:0xdffe3bd1be6f3d76!8m2!3d18.5535635!4d73.8090231!16s%2Fg%2F11h_400wc4?hl=en&entry=ttu"
                 target="_blank"
+                rel="noreferrer"
                 className="text-[#1893f7] text-lg font-medium"
               >
                 Find us on Google Maps

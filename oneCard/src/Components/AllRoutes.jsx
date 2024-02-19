@@ -1,4 +1,4 @@
-import React from 'react'
+
 import {Routes,Route} from 'react-router-dom'
 import Home from '../Pages/Home'
 import About from '../Pages/About'
@@ -7,13 +7,13 @@ import Offers from '../Pages/Offers'
 import Faq from '../Pages/Faq'
 import Contact from '../Pages/Contact'
 import Blog from '../Pages/Blog'
-// import SingleBlogMenu from '../Pages/SingleBlogMenu'
 import CreditCardInDepth from '../Pages/CreditCardInDepth'
 import ExploreLatest from '../Pages/ExploreLatest'
 import Safety from '../Pages/Safety'
 import OneCardFeatures from '../Pages/OneCardFeatures'
 import CultureAndCreditCard from '../Pages/CultureAndCreditCard'
 import RepaymentAndEmi from '../Pages/Repayment'
+import ApplyPage from '../Pages/ApplyPage'
 
 const AllRoutes = () => {
   return (
@@ -31,6 +31,7 @@ const AllRoutes = () => {
         <Route path = "/category/repaymentandemi" element= {<RepaymentAndEmi/>}/>
         <Route path = "/category/onecardfeatures" element= {<OneCardFeatures/>}/>
         <Route path = "/category/safety" element= {<Safety/>}/>
+        <Route path = "/apply" element= {<ApplyPage/>}/>
     </Routes>
   )
 }

@@ -1,8 +1,11 @@
-import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { useState } from "react";
+import {  NavLink, useLocation, useNavigate } from "react-router-dom";
+import { handleApply } from "./Navigation ";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const path = useLocation();
+
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -16,7 +19,7 @@ const Navbar = () => {
     { to: "/blog", title: "Blog" },
     { to: "/faq", title: "FAQ" },
     { to: "/contact", title: "Contact Us" },
-    // {to : '/SingleBlogMenu' , title: "Single Blog Menu"}
+
   ];
 
   const allLinks = links.map((link) => (
@@ -29,6 +32,11 @@ const Navbar = () => {
       {link.title}
     </NavLink>
   ));
+  const navigate = useNavigate();
+
+  if (path.pathname == '/apply'){
+    return
+  }
 
   return (
     <nav className="bg-white w-full fixed top-0 z-20 ">
@@ -38,6 +46,7 @@ const Navbar = () => {
             src="https://www.getonecard.app/images/One_logo_69by24.svg"
             alt="OneCard Logo"
             className="h-10 w-16"
+            onClick={() => handleApply(navigate, "/")}
           />
         </div>
         <div className=" flex ">
@@ -71,7 +80,10 @@ const Navbar = () => {
                 </svg>
               </button>
             </div>
-            <button className="bg-[#1893f7]  text-white  h-7 w-24 rounded-sm font-bold text-sm font-serif transition duration-300 hover:bg-blue-600 mr-4">
+            <button
+              onClick={() => handleApply(navigate, "/apply")}
+              className="bg-[#1893f7]  text-white  h-7 w-24 rounded-sm font-bold text-sm font-serif transition duration-300 hover:bg-blue-600 mr-4"
+            >
               {" "}
               {/* Added margin right for spacing */}
               Apply Now

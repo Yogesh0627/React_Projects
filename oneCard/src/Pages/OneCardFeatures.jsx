@@ -17,6 +17,8 @@ const OneCardFeatures = () => {
 
   React.useEffect(() => {
     document.title = "OneCard Features";
+    const favicon = document.getElementById("favicon");
+    favicon.href = "src/images/favIcon_Black.svg";
   }, []);
   return (
     <div className="mt-24 pt-2 ">
@@ -92,7 +94,8 @@ const OneCardFeatures = () => {
               How to Avail Merchant EMI on OneCard
             </h2>
             <p>
-            Get a step-by-step approach on how to avail merchant EMI options using the OneCard app.
+              Get a step-by-step approach on how to avail merchant EMI options
+              using the OneCard app.
             </p>
           </div>
         </div>

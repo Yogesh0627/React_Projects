@@ -15,7 +15,9 @@ const ExploreLatest = () => {
   ));
 
   React.useEffect(() => {
-    document.title = "Credit Card In-Depth";
+    document.title = "Explore Latest";
+    const favicon = document.getElementById("favicon");
+    favicon.href = "src/images/favIcon_Black.svg";
   }, []);
   return (
     <div className="mt-24 pt-2 ">

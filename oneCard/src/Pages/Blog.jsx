@@ -1,23 +1,14 @@
-import React, { useEffect } from "react";
+import  { useEffect } from "react";
 import Blog_Componentes_Two from "../Components/Blog_Componentes_Two";
 import Footer from "../Components/Footer";
 import Blog_Search from "../Components/Blog_Search";
 
 const Blog = () => {
-  // const arrayExplore=[{
-  //   link:'https://www.getonecard.app/images/blog/steps_to_lock_unlock_credit_card.png',
-  //   query: 'How to Block and Unblock Your Credit Card'
-  // },{
-  //   link2:'https://www.getonecard.app/images/blog/types_of_credit_cards.png',
-  //   query2: 'What are the Different Types of Credit Cards?'
-  // },{
-  //   link3: 'https://www.getonecard.app/images/blog/offers_on_credit_card_bill_payment.png',
-  //   query3: 'Credit Card Bill Payment Offers: Save Money and Earn Benefits'
-  // }]
-  // const exploreLatest = arrayExplore.map((item)=> <Blog_Componentes_Two title='Explore Latest' imagelink1={item.link} query1={item.query}/>)
-  // console.log(exploreLatest)
+
   useEffect(() => {
     document.title = "OneCard Blog: Tips, Guides & Insights on Credit Cards";
+    const favicon = document.getElementById("favicon");
+    favicon.href = "src/images/favIcon_Black.svg";
   }, []);
   return (
     <div>

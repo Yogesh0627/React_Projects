@@ -1,8 +1,6 @@
-import React from "react";
-
-const CareerCardComponet = ({ job, loc }) => {
+const CareerCardComponet = ({ job, loc,index }) => {
   return (
-    <div className="flex flex-col sm:flex-row justify-between  h-44 w-4/5 m-auto border-b-2 px-5 border-black items-center">
+    <div key ={index} className="flex flex-col sm:flex-row justify-between  h-44 w-4/5 m-auto border-b-2 px-5 border-black items-center">
       <div>
         <div>
           <h3 className="text-xl w-80 font-bold  text-left font-serif ">

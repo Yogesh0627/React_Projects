@@ -1,7 +1,12 @@
-import React from "react";
+import  { useEffect } from "react";
 import Footer from "../Components/Footer";
 
 const About = () => {
+  useEffect(() => {
+    document.title = "About Us - OneCard";
+    const favicon = document.getElementById("favicon");
+    favicon.href = "src/images/favIcon_Black.svg";
+  }, []);
   return (
     <div>
       <section className="mt-16">

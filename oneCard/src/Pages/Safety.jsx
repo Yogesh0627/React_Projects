@@ -1,8 +1,7 @@
 import React from "react";
 import Blog_Component from "../Components/Blog_Component";
-import { RepaymentsAndEmi, safetyMenu } from "../AllData/BlogMenuData";
+import { safetyMenu } from "../AllData/BlogMenuData";
 import Blog_Search from "../Components/Blog_Search";
-import Blog_Componentes_Two from "../Components/Blog_Componentes_Two";
 import Footer from "../Components/Footer";
 
 const Safety = () => {
@@ -16,7 +15,9 @@ const Safety = () => {
   ));
 
   React.useEffect(() => {
-    document.title = "Repayments and Emi";
+    document.title = "Safety";
+    const favicon = document.getElementById("favicon");
+    favicon.href = "src/images/favIcon_Black.svg";
   }, []);
   return (
     <div className="mt-24 pt-2 ">
@@ -26,9 +27,7 @@ const Safety = () => {
       <div className="flex flex-col gap-4">
         <div className="">
           <div className="w-4/5  m-auto">
-            <h2 className="font-bold text-xl p-1 font-serif">
-              Safety
-            </h2>
+            <h2 className="font-bold text-xl p-1 font-serif">Safety</h2>
             <div className="flex flex-col w-fit md:flex-row gap-5 mt-8 pt-4">
               <div className="w-full md:w-3/6 ">
                 <img

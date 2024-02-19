@@ -1,14 +1,16 @@
-import React, { useEffect } from "react";
+import  { useEffect } from "react";
 import CareerCardComponet from "../Components/CareerCardComponet";
 import { Career } from "../AllData/CareerData";
 import Footer from "../Components/Footer";
 const Careers = () => {
   useEffect(() => {
     document.title = "Careers at FPL";
+    const favicon = document.getElementById("favicon");
+    favicon.href = "src/images/favIcon_Black.svg";
   }, []);
 
-  const allJobs = Career.map((item) => (
-    <CareerCardComponet job={item.opportunity} loc={item.location} />
+  const allJobs = Career.map((item,index) => (
+    <CareerCardComponet job={item.opportunity} loc={item.location} key={index}/>
   ));
   return (
     <div>

@@ -1,8 +1,7 @@
-import React, { useEffect } from "react";
+import  { useEffect } from "react";
 import Blog_Component from "../Components/Blog_Component";
 import { cultureAndCreditCard } from "../AllData/BlogMenuData";
 import Blog_Search from "../Components/Blog_Search";
-import Blog_Componentes_Two from "../Components/Blog_Componentes_Two";
 import Footer from "../Components/Footer";
 
 const CultureAndCreditCard = () => {
@@ -17,6 +16,8 @@ const CultureAndCreditCard = () => {
 
   useEffect(() => {
     document.title = "Culture And Credit Card";
+    const favicon = document.getElementById("favicon");
+    favicon.href = "src/images/favIcon_Black.svg";
   }, []);
   return (
     <div className="mt-24 pt-2 ">
@@ -40,10 +41,12 @@ const CultureAndCreditCard = () => {
               <div className="w-full md:w-2/5 flex flex-col gap-2  text-[#646464] ">
                 <p>Jan 18, 2024</p>
                 <h2 className="text-lg text-black font-bold font-serif ">
-                Trending International Destinations With Easy Visa for Indian Travellers
+                  Trending International Destinations With Easy Visa for Indian
+                  Travellers
                 </h2>
                 <p className="">
-                List of trending travel destinations you can visit without going through a tedious visa application process.
+                  List of trending travel destinations you can visit without
+                  going through a tedious visa application process.
                 </p>
               </div>
             </div>
@@ -60,9 +63,7 @@ const CultureAndCreditCard = () => {
             />
             <Blog_Component
               date="Jan 11, 2024"
-              query={
-                "How to Use Your Credit Card to Save Tax"
-              }
+              query={"How to Use Your Credit Card to Save Tax"}
               imgLink={
                 "https://www.getonecard.app/images/blog/save_tax_using_your_credit_card.png"
               }
@@ -87,10 +88,12 @@ const CultureAndCreditCard = () => {
           <div className="w-full md:w-3/6 flex flex-col gap-2  text-[#646464] ">
             <p>Nov 23, 2023</p>
             <h2 className="text-lg text-black font-bold font-serif ">
-            Top 5 Ways To Save Money on Hotels While Travelling
+              Top 5 Ways To Save Money on Hotels While Travelling
             </h2>
             <p>
-            Booking cheaper accommodation is not the only way to save money on hotels. Read this blog to learn more ways to save on hotel expenses.
+              Booking cheaper accommodation is not the only way to save money on
+              hotels. Read this blog to learn more ways to save on hotel
+              expenses.
             </p>
           </div>
         </div>

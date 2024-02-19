@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import  { useEffect } from "react";
 import Offer_Card_Component from "../Components/Offer_Card_Component";
 import {
   AutomobileDetails,
@@ -19,147 +19,162 @@ import {
 import Footer from "../Components/Footer";
 const Offers = () => {
   useEffect(() => {
-    document.title =
-      "Credit Card Offers: Avail Latest Offers & Deals with OneCard";
+    document.title ="Credit Card Offers: Avail Latest Offers & Deals with OneCard";
+    const favicon = document.getElementById("favicon");
+    favicon.href = "src/images/favIcon_Black.svg";
   }, []);
 
-  const Groceries = GroceryDetails.map((item) => (
+  const Groceries = GroceryDetails.map((item,index) => (
     <Offer_Card_Component
       imageLink={item.imglink}
       logoLink={item.logolink}
       offer={item.offer}
       title={item.validity}
       validity={item.validity}
+      key={index}
     />
   ));
 
-  const FoodAndDine = Food_And_Dine_Details.map((item) => (
+  const FoodAndDine = Food_And_Dine_Details.map((item,index) => (
     <Offer_Card_Component
       imageLink={item.imglink}
       logoLink={item.logolink}
       offer={item.offer}
       title={item.validity}
       validity={item.validity}
+      key={index}
     />
   ));
 
-  const Shopping = ShoppingDetails.map((item) => (
+  const Shopping = ShoppingDetails.map((item,index) => (
     <Offer_Card_Component
       imageLink={item.imglink}
       logoLink={item.logolink}
       offer={item.offer}
       title={item.validity}
       validity={item.validity}
+      key={index}
     />
   ));
 
-  const Electronics = ElectronicDetails.map((item) => (
+  const Electronics = ElectronicDetails.map((item,index) => (
     <Offer_Card_Component
       imageLink={item.imglink}
       logoLink={item.logolink}
       offer={item.offer}
       title={item.validity}
       validity={item.validity}
+      key={index}
     />
   ));
 
-  const Travels = TravelDetails.map((item) => (
+  const Travels = TravelDetails.map((item,index) => (
     <Offer_Card_Component
       imageLink={item.imglink}
       logoLink={item.logolink}
       offer={item.offer}
       title={item.validity}
       validity={item.validity}
+      key={index}
     />
   ));
 
-  const Rent = RentDetails.map((item) => (
+  const Rent = RentDetails.map((item,index) => (
     <Offer_Card_Component
       imageLink={item.imglink}
       logoLink={item.logolink}
       offer={item.offer}
       title={item.validity}
       validity={item.validity}
+      key={index}
     />
   ));
 
-  const Education = EducationDetails.map((item) => (
+  const Education = EducationDetails.map((item,index) => (
     <Offer_Card_Component
       imageLink={item.imglink}
       logoLink={item.logolink}
       offer={item.offer}
       title={item.validity}
       validity={item.validity}
+      key={index}
     />
   ));
 
-  const BillsAndUtilities = BillsAndUtilititesDetails.map((item) => (
+  const BillsAndUtilities = BillsAndUtilititesDetails.map((item,index) => (
     <Offer_Card_Component
       imageLink={item.imglink}
       logoLink={item.logolink}
       offer={item.offer}
       title={item.validity}
       validity={item.validity}
+      key={index}
     />
   ));
 
-  const Entertainment = EntertainmentDetails.map((item) => (
+  const Entertainment = EntertainmentDetails.map((item,index) => (
     <Offer_Card_Component
       imageLink={item.imglink}
       logoLink={item.logolink}
       offer={item.offer}
       title={item.validity}
       validity={item.validity}
+      key={index}
     />
   ));
 
-  const Automobiles = AutomobileDetails.map((item) => (
+  const Automobiles = AutomobileDetails.map((item,index) => (
     <Offer_Card_Component
       imageLink={item.imglink}
       logoLink={item.logolink}
       offer={item.offer}
       title={item.validity}
       validity={item.validity}
+      key={index}
     />
   ));
 
-  const Other = OtherDetails.map((item) => (
+  const Other = OtherDetails.map((item,index) => (
     <Offer_Card_Component
       imageLink={item.imglink}
       logoLink={item.logolink}
       offer={item.offer}
       title={item.validity}
       validity={item.validity}
+      key={index}
     />
   ));
 
-  const Fuel = FuelDetails.map((item) => (
+  const Fuel = FuelDetails.map((item,index) => (
     <Offer_Card_Component
       imageLink={item.imglink}
       logoLink={item.logolink}
       offer={item.offer}
       title={item.validity}
       validity={item.validity}
+      key={index}
     />
   ));
 
-  const JewelleryAndWatch = JewelleryAndWatches.map((item) => (
+  const JewelleryAndWatch = JewelleryAndWatches.map((item,index) => (
     <Offer_Card_Component
       imageLink={item.imglink}
       logoLink={item.logolink}
       offer={item.offer}
       title={item.validity}
       validity={item.validity}
+      key={index}
     />
   ));
 
-  const HealthAndWellness = HealthAndWellnessDetails.map((item) => (
+  const HealthAndWellness = HealthAndWellnessDetails.map((item,index) => (
     <Offer_Card_Component
       imageLink={item.imglink}
       logoLink={item.logolink}
       offer={item.offer}
       title={item.validity}
       validity={item.validity}
+      key={index}
     />
   ));
 
@@ -228,7 +243,9 @@ const Offers = () => {
                 Rent
               </h2>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  w-3/4 gap-x-8 m-auto ">{Rent}</div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  w-3/4 gap-x-8 m-auto ">
+              {Rent}
+            </div>
           </div>
           <div className="mt-20">
             <div className="w-3/4 m-auto">
@@ -286,7 +303,9 @@ const Offers = () => {
                 Fuel
               </h2>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  w-3/4 gap-x-8 m-auto ">{Fuel}</div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  w-3/4 gap-x-8 m-auto ">
+              {Fuel}
+            </div>
           </div>
           <div className="mt-20">
             <div className="w-3/4 m-auto">
