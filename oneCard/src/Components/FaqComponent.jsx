@@ -12,7 +12,7 @@ const FaqComponent = ({ qstn, ans }) => {
         className="w-4/5 px-5 hover:cursor-pointer rounded-2xl shadow-lg h-24 bg-[#f5f5f5] m-auto flex items-center"
       >
         <h3 className="text-xl font-medium">
-          <a href="">{qstn}</a>
+          <p >{qstn}</p>
         </h3>
       </div>
       <div
