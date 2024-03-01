@@ -14,7 +14,7 @@ const ApplyPage = () => {
   }, []);
   return (
     <div className="">
-      <section className="bg-[url('https://www.getonecard.app/assets/apply/bg_web.png')]  bg-cover bg-center h-screen">
+      <section className="bg-[url('https://www.getonecard.app/assets/apply/bg_web.png')] bg-cover bg-center h-screen">
         <div className=" flex items-center flex-wrap">
           <div className=" flex md:flex  flex-row items-end md:pb-6 pb-4  justify-center md:w-20 md:h-32  w-16 h-20 rounded-bl-3xl rounded-br-3xl ml-10 sm:ml-20 bg-gray-200 bg-opacity-5 ">
             <img
